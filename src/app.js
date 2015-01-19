@@ -3,6 +3,7 @@ var UI = require('ui');
 var ajax = require('ajax');
 var Settings = require('settings');
 var Accel = require('ui/accel');
+var Vector2 = require('vector2');
 
 //Settings
 Settings.config(
@@ -31,7 +32,18 @@ ajax(
     title: 'LinusTech Tips',
     items: [{
       title: 'Username',
-      subtitle: data.nickname 
+      subtitle: data.nickname,
+      Menu.on('select', function(e) {
+      console.log('Fetching Profile Image');
+      var profileWindow = new UI.Window();
+      var profileImg = new UI.Image ({
+        posisiton: new Vector2 (0,0),
+        size: new Vector2 (144,144),
+        image: data.profile_image
+            });
+      profileWindow.add(profileImg);
+      profileWindow.show();
+    }),
     }, {
       title: 'New Messages',
       subtitle: data.new_pms,

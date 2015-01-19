@@ -4,19 +4,16 @@ var ajax = require('ajax');
 var Settings = require('settings');
 var Accel = require('ui/accel');
 
-Accel.init();
+//Settings
+Settings.config(
+  { url: 'http://wferr.com/LinusTechTips-Pebble/'}
+);
 
-// Static Cards
-var splashWindow = new UI.Window({
+// Splash Window
+var splashWindow = new UI.Card({
   title:'Fetching Data',
   subtitle:'Please Wait'
 });
-
-Settings.config(
-  { url: 'https://linustechtips.com/main/index.php?app=core&module=global&section=login'}
-);
-
-// Display Splash Card
 splashWindow.show();
 
 var API ='http://linustechtips.com/main/page/api.php';
@@ -34,7 +31,7 @@ ajax(
     title: 'LinusTech Tips',
     items: [{
       title: 'Username',
-      subtitle: data.display_name 
+      subtitle: data.nickname 
     }, {
       title: 'New Messages',
       subtitle: data.new_pms,
@@ -52,7 +49,9 @@ ajax(
     console.log("Error fetching Data");
   });
 };
-
-
+//Call Function to Update Data
 updateData();
+
+//Start Accelerometer Refresh 
+Accel.init();
 Accel.on("tap", updateData(), console.log('Updated Data'));

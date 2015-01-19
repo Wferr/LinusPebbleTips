@@ -33,7 +33,7 @@ ajax(
     items: [{
       title: 'Username',
       subtitle: data.nickname,
-      Menu.on('select', function(e) {
+/*      Menu.on('select', function(e) {
       console.log('Fetching Profile Image');
       var profileWindow = new UI.Window();
       var profileImg = new UI.Image ({
@@ -44,6 +44,7 @@ ajax(
       profileWindow.add(profileImg);
       profileWindow.show();
     }),
+*/
     }, {
       title: 'New Messages',
       subtitle: data.new_pms,

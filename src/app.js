@@ -64,7 +64,6 @@ ajax(
 };
 //Call Function to Update Data
 updateData();
-
 //Start Accelerometer Refresh 
 Accel.init();
 Accel.on("tap", updateData(), console.log('Updated Data'));

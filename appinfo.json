@@ -39,7 +39,7 @@
     "shortName": "Linus Tech",
     "uuid": "691e2705-6fa0-4c8f-86e7-fea6128f90ac",
     "versionCode": 1,
-    "versionLabel": "0.1",
+    "versionLabel": "0.2",
     "watchapp": {
         "watchface": false
     }

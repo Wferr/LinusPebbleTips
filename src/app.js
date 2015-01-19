@@ -7,7 +7,7 @@ var Accel = require('ui/accel');
 
 //Settings
 Settings.config(
-  { url: 'http://wferr.com/LinusTechTips-Pebble/'}
+  { url: 'http://wferr.com/LinusPebbleTips/'}
 );
 
 // Splash Window

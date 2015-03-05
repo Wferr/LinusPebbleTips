@@ -7,7 +7,7 @@ var Accel = require('ui/accel');
 
 //Settings
 Settings.config(
-  { url: 'https://linustechtips.com/main/index.php?app=core&module=global&section=login'}
+  { url: 'http://linustechtips.com/main/?app=core&module=global&section=login?cm_api=true'}
 );
 
 // Splash Window

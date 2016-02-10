@@ -11,17 +11,17 @@
             {
                 "file": "images/menu_icon.png",
                 "name": "IMAGE_MENU_ICON",
-                "type": "png"
+                "type": "bitmap"
             },
             {
                 "file": "images/logo_splash.png",
                 "name": "IMAGE_LOGO_SPLASH",
-                "type": "png"
+                "type": "bitmap"
             },
             {
                 "file": "images/tile_splash.png",
                 "name": "IMAGE_TILE_SPLASH",
-                "type": "png"
+                "type": "bitmap"
             },
             {
                 "file": "fonts/UbuntuMono-Regular.ttf",
@@ -32,15 +32,21 @@
                 "file": "images/menuicon.png",
                 "menuIcon": true,
                 "name": "IMAGES_MENUICON_PNG",
-                "type": "png"
+                "type": "bitmap"
             }
         ]
     },
+    "sdkVersion": "3",
     "shortName": "Linus Tech",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
     "uuid": "691e2705-6fa0-4c8f-86e7-fea6128f90ac",
     "versionCode": 1,
     "versionLabel": "0.2",
     "watchapp": {
+        "hiddenApp": false,
         "watchface": false
     }
 }
